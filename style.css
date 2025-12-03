@@ -1,0 +1,270 @@
+:root {
+    --bg-color: #fff;
+    --corn-Rad: 24px;
+    --list-padding: 40px;
+    --cont-width: 1440px;
+    --cont-height: 1956px;
+    --main-object-width: 736px;
+    --main-object-height: 1700px;
+    --objects-width: 656px;
+    --list-gap: 40px;
+    --text-blocks-gap: 32px;
+    --text-line-height: 150%;
+}
+body {
+    --bg-color: #f3e5d7;
+    background-color: var(--bg-color);
+}
+
+
+.container {
+    --fzTitle: 28px;
+    --fzText: 16px;
+    width: var(--cont-width);
+    height: var(--cont-height);
+    padding: 128px 352px;
+}
+
+
+.list {
+    --li-height: 24px;
+    --bg-color: #fff;
+    background-color: var(--bg-color);
+    border-radius: var(--corn-Rad);
+    display: flex;
+    flex-direction: column;
+    width: var(--main-object-width);
+    height: var(--main-object-height);
+    box-sizing: border-box;
+    padding: var(--list-padding);
+    gap: var(--list-gap);
+}
+
+
+.picture-1 {
+    width: var(--objects-width);
+}
+
+
+.main-text {
+    --main-object-height: 1280px;
+    --elements-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    width: var(--objects-width);
+    --title-height: 28px;
+    height: var(--main-object-height);
+    gap: var(--text-blocks-gap);
+}
+.title-28 {
+    font-size: var(--fzTitle);
+}
+
+.simple-omelette-recipe {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--elements-gap)
+}
+.sor-title {
+    --title-height: 40px;
+    --text-line-height: 100%;
+    color: #272523;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: var(--text-line-height);
+    height: var(--title-height);
+    font-size: 40px;
+}
+.sor-text {
+    color: #5f564d;
+    height: 48px;
+    font-size: var(--fzText);
+    font-family: "Outfit", sans-serif;
+}
+
+
+.preparation-time {
+    --title-height: 20px;
+    --bg-color: #fff7fb;
+    background-color: var(--bg-color);
+    --elements-gap: 16px;
+    height: 172px;
+    border-radius: calc(var(--corn-Rad) / 2);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--elements-gap);
+}
+.pt-title {
+    color: #7a284e;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    line-height: 100%;
+    font-weight: 600;
+    height: var(--title-height);
+    font-size: 20px;
+}
+.pt-text {
+    color: #5f564d;
+    font-family: "Outfit", sans-serif;
+    height: 88px;
+    font-size: var(--fzText);
+}
+.pt-text > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pt-text li {
+    margin-left: 32px;
+    padding-left: 8px;
+    height: var(--li-height);
+    margin-bottom: 8px;
+}
+
+
+
+.Ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: var(--elements-gap);
+    height: 204px;
+    width: var(--object-width);
+}
+.ing-title {
+    color: #854632;
+    font-family: "Young Serif", serif;
+    height: var(--title-height);
+}
+.ing-text {
+    color: #5f564d;
+    font-family: "Outfit", sans-serif;
+    font-size: var(--fzText);
+    width: var(--object-width);
+    line-height: var(--text-line-height);
+    margin: 0px;
+    padding: 0px;
+}
+.ing-text ul {
+    height: 152px;
+    margin: 0px;
+    padding: 0px;
+}
+.ing-text li {
+    margin-left: 32px;
+    padding-left: 16px;
+    height: var(--li-height);
+    margin-bottom: 8px;
+}
+
+
+
+
+
+.Instructions {
+    height: 332px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--elements-gap);
+}
+.ins-title {
+    color: #854632;
+    font-family: "Young Serif", serif;
+    height: var(--title-height);
+}
+.ins-text {
+    font-family: "Outfit", sans-serif;
+    height: 280px;
+    line-height: var(--text-line-height);
+    color: #5f564d;
+    font-size: var(--fzText);
+}
+.ins-text ol {
+    margin: 0px;
+    padding: 0px;
+}
+.ins-text li {
+    margin-left: 24px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+.ins-text li:nth-child(6) {
+    margin-bottom: 0px;
+}
+
+
+.Nutrition {
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--elements-gap);
+}
+.n-title {
+    color: #854632;
+    font-family: "Young Serif", serif;
+    height: var(--title-height);
+}
+.n-text {
+    font-size: var(--fzText);
+    line-height: var(--text-line-height);
+    color: #5f564d;
+    font-family: "Outfit", sans-serif;
+    height: 24px;
+}
+
+
+.divider{
+    height: 1px;
+    width: var(--object-width);
+    border-bottom: 1px solid #e3ddd7;
+}
+.hr {
+    width: var(--object-width);
+    border: none;
+    height: 1px;
+    background-color: #e3ddd7;
+    margin-bottom: 12px;
+}
+
+
+table {
+    --elements-width: 288px;
+    --elements-height: 24px;
+    font-family: "Outfit", sans-serif;
+    color: #5f564d;
+    width: var(--object-width);
+    border-collapse: collapse;
+    font-size: var(--fzText);
+    margin: 0px;
+    padding: 0px;
+}
+
+tr {
+    width: var(--object-width);
+}
+td {
+    line-height: var(--text-line-height);
+    width: var(--elements-width);
+}
+
+tr:nth-child(4) > td {
+    border: none;
+}
+
+.td1 {
+    width: var(--elements-width);
+    height: var(--elements-height);
+    margin: 0px;
+    padding: 0px;
+    padding-left: 32px;
+}
+.td2 {
+    height: var(--elements-height);
+    margin: 0px;
+    padding: 0px;
+    color: #854632;
+    font-weight: bold;
+    padding-right: 32px;
+}
